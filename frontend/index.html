@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <!--<style>
+        table td,
+        table th {
+            border: 1px solid black;
+        }
+    </style>!-->
 </head>
 <body>
     <div class="disclaimer" id="disclaimer">
@@ -16,6 +22,30 @@
     <main>
 
     </main>
+    <h2>Search for medicines</h2>
+    <input type="text" id="searchMedicine" placeholder="Enter medicine name">
+    <button id="searchButton">Search</button>
+    <div id="container"></div>
+    <h2>Add a medicine</h2>
+    <form id="add-Medicine">
+        <input type="text" name="name" placeholder="name" required>
+        <input type="number" name="price" placeholder="price" step ="0.01" required>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="response-data"></div>
+    <h2>Update Medicine Price</h2>
+    <form id="updatePrice-form">
+        <input type="text" name="name" placeholder="name">
+        <input type="number" name="price" placeholder="price" step="0.01" required>
+        <button type="submit">Update</button>
+    </form>
+    <div id="update-data"></div>
+    <h2>Delete a medicine</h2>
+    <form id="deletePrice-form">
+        <input type="text" name="name" placeholder="name">
+        <button type="submit">Delete</button>
+    </form>
+    <div id="delete-data"></div>
     <script src="script.js"></script>
 </body>
 </html>

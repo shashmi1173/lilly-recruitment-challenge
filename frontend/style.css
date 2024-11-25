@@ -29,4 +29,70 @@ body {
     height: 30px;
 }
 
+
 /* ---- Your custom styles below ---- */
+table td, table th {
+    border: 1px solid black;
+}
+
+h1,h2 {
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transistion: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top:20px;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007BFF;
+    color: white;
+}
+
+table tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Response Data */
+#response-data,
+#update-data,
+#delete-data {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
